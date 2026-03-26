@@ -8,13 +8,60 @@
 </head>
 <body>
    <div class="container">
-      <h1>Rock paper scissors game</h1>
-      <p>Open the browser console to see the game score results.</p>
-      <p>This game has 5 rounds</p>
-      <p>Have a nice play.</p>
-      <button id="play-button">Play</button>
+      <div class="description-section">
+         <h1>Rock paper scissors game</h1>
+         <p>The winner is determined after getting a score of 5.</p>
+         <p>Have a nice play.</p>
+      </div>
    </div>
-
+   <div class="container">
+      <div class="subtitle">Select Shape</div>
+      <div class="select-shape-section">
+         <button class="choice-btn" value="Rock">Rock</button>
+         <button class="choice-btn" value="Paper">Paper</button>
+         <button class="choice-btn" value="Scissors">Scissors</button>
+      </div>
+   </div>
+   <div class="hidden-section">
+      <div class="container">
+         <div class="subtitle">Chosen</div>
+         <div class="display-choice">
+            <div class="display-choice-left">
+               <div id="your-choice"></div>
+               <div class="heading">Your Choice</div>
+            </div>
+            <div class="display-choice-right">
+               <div id="computer-choice"></div>
+               <div class="heading">Computer Choice</div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="hidden-section">
+      <div class="container">
+         <div class="diplay-result-section">
+            <div class="subtitle">Result</div>
+            <div id="result">You Win</div>
+         </div>
+      </div>
+   </div>
+   <div class="container">
+      <div class="subtitle">Score</div>
+      <div class="scores-section">
+         <div class="score">
+            <div id="your-score">0</div>
+            <div class="heading">Your</div>
+         </div>
+         <div class="score">
+            <div id="tie-score">0</div>
+            <div class="heading">Tie</div>
+         </div>
+         <div class="score">
+            <div id="computer-score">0</div>
+            <div class="heading">Computer</div>
+         </div>
+      </div>
+   </div>
    <script src="script.js"></script>
 </body>
 </html>
